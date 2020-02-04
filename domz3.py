@@ -149,7 +149,8 @@ listo = [1, 3, 4, 5, 6, 3, 2, 4, 9]
 
 
 stringo = 'pizdetsbaradetsvpopukupets'
-numbero = [1,23,4,51,23,4,5,12,3,4,51,2,3,4,51,2,3,4,51,12,23,4,5,12,3,4,5,12,6562,3,1,2,4,2,35]
+numbero = [1, 23, 4, 51, 23, 4, 5, 12, 3, 4, 51, 2, 3, 4, 51, 2, 3, 4, 51, 12, 23, 4, 5, 12, 3, 4, 5, 12, 6562, 3, 1, 2,
+           4, 2, 35]
 
 
 def over_two(stri):
@@ -181,6 +182,8 @@ def crypting_and_decrypting(stri, key_):  # home_made version without google
 # Output
 # print(crypting_and_decrypting('Hi, hi! I need mohney! NOW!!! FUcken ASAP', '103'))
 # print(crypting_and_decrypting('{Z[Zz]VVW^\[]VJ}|dufPXV]r`rc', '103'))
+# print(crypting_and_decrypting('pizdets borodets', '101'))
+# print(crypting_and_decrypting('AXKUTEBS^C^UTEB','101' ))
 
 
 # TODO 9. Найти наименьшее общее кратное (НОК) пары чисел по формуле
@@ -457,14 +460,14 @@ def line_stat_merge(new_dic, base_dic):
     return base_dic
 
 
-#Uncomment this with I/O- otherwise reading lines will lag
-# with open('war_n_peace.txt', 'r') as war_n_peace:
-#     stat = {}
-#     for line in war_n_peace.readlines():
-#         line_stat_merge(word_stat_line(line), stat)
+# Uncomment this with I/O- otherwise reading lines will lag
+with open('war_n_peace.html', 'r') as war_n_peace:
+    stat = {}
+    for line in war_n_peace.readlines():
+        line_stat_merge(word_stat_line(line), stat)
 
 # Output
-# [print(f'Word |"{a:8}"| is used [{stat[a]}] times') for a in sorted(stat, key=stat.get, reverse=False)]
+[print(f'Word |"{a:8}"| is used [{stat[a]}] times') for a in sorted(stat, key=stat.get, reverse=False)]
 #
 # Word |"это     "| is used [2959] times
 # Word |"был     "| is used [3039] times
@@ -473,6 +476,22 @@ def line_stat_merge(new_dic, base_dic):
 # Word |"как     "| is used [4511] times
 # Word |"его     "| is used [5986] times
 # Word |"что     "| is used [7679] times
+
+
+# Word |"distinctio"| is used [5] times
+# Word |"assumenda"| is used [5] times
+# Word |"numquam "| is used [5] times
+# Word |"sequi   "| is used [5] times
+# Word |"modi    "| is used [5] times
+# Word |"impedit "| is used [5] times
+# Word |"optio   "| is used [5] times
+# Word |"ratione "| is used [6] times
+# Word |"culpa   "| is used [6] times
+# Word |"nobis   "| is used [6] times
+# Word |"necessitatibus"| is used [6] times
+# Word |"repellat"| is used [7] times
+# Word |"repudiandae"| is used [8] times
+# Word |"mollitia"| is used [9] times
 
 '''Thanks for reading. Here's a cookie'''
 # print('This is a checkmark to mark that you are done reading!', u'\u2713')

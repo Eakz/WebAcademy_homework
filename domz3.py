@@ -467,7 +467,7 @@ with open('war_n_peace.html', 'r') as war_n_peace:
         line_stat_merge(word_stat_line(line), stat)
 
 # Output
-[print(f'Word |"{a:8}"| is used [{stat[a]}] times') for a in sorted(stat, key=stat.get, reverse=False)]
+# [print(f'Word |"{a:8}"| is used [{stat[a]}] times') for a in sorted(stat, key=stat.get, reverse=False)]
 #
 # Word |"это     "| is used [2959] times
 # Word |"был     "| is used [3039] times
